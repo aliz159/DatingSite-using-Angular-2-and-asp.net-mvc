@@ -1,0 +1,35 @@
+<p>
+  <loader [loading]="loading"></loader>
+</p>
+
+<body class="login">
+  <br/>
+<br/>
+
+
+<div class="container">
+  <h1>Login</h1>
+  <form #trvForm="ngForm" (ngSubmit)="Login()" class="contactForm">
+
+  <label><span id="user" class="glyphicon glyphicon-user"></span></label>
+  <input type="email" placeholder="Enter email"  pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" 
+    [(ngModel)]="Email" #userEmail="ngModel" name="email" required/>
+      <div *ngIf="userEmail.invalid && (userEmail.dirty || userEmail.touched)" class="alert alert-danger input-validator-container alerMsg">
+        <div *ngIf="userEmail.errors.required">Email is required</div>
+        <div *ngIf="userEmail.errors.pattern">Email is invalid</div>
+      </div>
+      <br>
+
+
+    <label><span id="lock" class="glyphicon glyphicon-lock"></span></label>
+    <input type="password" placeholder="Enter password" [(ngModel)]="Password" name="password" #userPassword="ngModel" minlength="6" required/> 
+    <div *ngIf="userPassword.invalid && (userPassword.dirty || userPassword.touched)" class="alert alert-danger input-validator-container alerMsg">
+      <div *ngIf="userPassword.errors.required">Password is required</div>
+      <div *ngIf="userPassword.errors.minlength">password must contain minimum 6 chars</div>
+    </div>
+    <br>
+
+    <button [disabled]="!trvForm.valid" class="btn btn-primary">Login</button>
+     <p class="errorMassage">{{Error}}</p> 
+  </form>
+</div>

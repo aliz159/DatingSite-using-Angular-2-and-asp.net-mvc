@@ -1,0 +1,66 @@
+<div class="Storeys">
+<h1>Love Story<span class="glyphicon glyphicon-heart"></span></h1>
+
+<div *ngFor="let item of arStories" class="cards">
+<story 
+[img]="item.Image"
+[FirstCustomerName]="item.FirstCustomerName"
+[SecondCustomerName]="item.SecondCustomerName"
+[Cities]="item.Cities"
+[Story]="item.Story"
+[ShortStory]="item.ShortStory">
+</story>
+
+</div>
+</div>
+ <!-- //Story : ShortStory -->
+    <!--<div>
+        <img src="img/download.jpg" height="150" width="175" 
+        (click)="makeAlert1()">       
+        <span >Hagit and Avi, Afula : </span>
+        <br/>
+        <span>{{ShortStoey1}}
+            <a class="readMore"(click)="ReadMoreOrLess1()">{{Enable1 ? 'read less' : 'read more'}}</a>
+        </span>
+    </div>
+    <div id="myModal" class="modal" *ngIf="ShowModal">
+         <span class="close" (click)="makeAlert1()">×</span>
+         <img id="myImg" src="img/download.jpg"
+              width="500" height="407" >
+         <div id="caption"></div>
+    </div>
+
+
+    <div>
+        <img src="img/download (4).jpg"
+        (click)="makeAlert2()" height="150" width="175">
+        <span>Beni and Keren, Haifa : </span>
+        <br/>
+        <span>{{ShortStory2}}
+            <a class="readMore" (click)="ReadMoreOrLess2()">{{Enable2 ? 'read less' : 'read more'}}</a>
+        </span>
+    </div>
+    <div id="myModal" class="modal" *ngIf="ShowModal2">
+         <span class="close" (click)="makeAlert2()">×</span>
+         <img id="myImg" src="img/download (4).jpg" 
+         width="500" height="407" >
+         <div id="caption"></div>
+    </div>
+
+
+    <div>
+        <img src="img/download (2).jpg"
+        (click)="makeAlert3()" height="150" width="175">
+        <span>Efi and Liat, Shderot : </span>
+        <br/>
+        <span>{{ShortStory3}}
+            <a class="readMore" (click)="ReadMoreOrLess3()">{{Enable3 ? 'read less' : 'read more'}}</a>
+        </span>
+    </div>
+    <div id="myModal" class="modal" *ngIf="ShowModal3">
+         <span class="close" (click)="makeAlert3()">×</span>
+         <img id="myImg" src="img/download (2).jpg" 
+         width="500" height="407">
+         <div id="caption"></div>
+    </div>
+-->

@@ -1,0 +1,266 @@
+
+/* table{
+    margin-left: 25px;
+    width: 66%;
+        margin-top: -4%;
+    float: right;
+        margin-right: 1%;
+}*/
+    .table{
+         width: 77%;
+    }
+    table{
+    margin-top: -4%;
+    font-size: 19px;
+    margin-right: 10%;
+    }
+th{
+    text-align: left;
+    background-color: rgb(230,230,250);
+}
+td{
+    text-align: left;
+     font-weight: bold;
+         padding-left: 15px;
+         padding-right: 21px;
+    background-color: rgba(230, 230, 250, 0.68);
+}
+li{
+    margin-right: 0px;
+}
+
+/*
+#menu{
+    background-color: #5d5045;
+} */
+div{
+  /*  display: inline-block;*/
+    /*text-align: center;*/
+}
+input,select{
+ height: 30px;
+    width: 196px;
+        margin-top: 6px;
+            height: 30px;
+    width: 196px;
+    padding-top: 7px;
+    margin-top: 10px;
+}
+label{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.col-sm-3{
+    text-align: left;
+    /*width: 300px;*/
+    font-size: 17px;
+    background-color: rgba(230, 230, 250, 0.68)
+}
+.gender{
+    width: 17px;
+    height: 17px;
+}
+.ageSelect{
+    width: 92px;
+}
+.container-fluid{
+    margin-top: -2%;
+    width: 74%;
+}
+h1{
+text-shadow: 2px 2px black;
+    text-shadow: 2px 2px 2px #000;
+    font-family: 'Cookie';
+    margin-top: 5%;
+    margin-left: 473px;
+    font-weight: bold;
+    /* font-size: 71px; */
+    color: white;
+    text-shadow: 1px 1px 1px #000, 3px 3px 5px red;
+    font-size: 70px;
+}
+.h1{
+    margin-left: -25px;
+    font-family: 'Cookie';
+    color: white;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px #000;
+}
+.selected{
+	border:solid #4CAF50 1px;
+	float:left; 
+	margin:2px;
+    padding:2px 15px;
+}
+.suggestions{
+position: relative;
+}
+.hobbis-list{
+    border: 1px solid rgba(128, 128, 128, 0.39);
+    width: 301px;
+    margin-top: -5px;
+    padding: 0;
+    margin-left: 4px;
+    POSITION: absolute;
+    BACKGROUND: #fff;
+    top: -2px;
+    left: 0;
+}
+.LastRow{
+        float: right;
+    width: 257px;
+    margin-left: 9px;
+}
+.BeforLastRow{
+        margin-left: 88px;
+       width: 265px;
+}
+.BeforLastRow label{
+margin-top: 15px;
+}
+.LastRow input{
+    margin-top: 15px;
+}
+.Inputs{
+       margin-left: 124px;
+    width: 711px;
+    margin-top: -37px;
+}
+.container {
+    padding-right: 15px;
+    /* padding-left: 15px; */
+    margin-right: auto;
+    margin-left: auto;
+}     
+.First{
+      width: 295px;
+  
+    margin-left: 20px;    
+}
+img{
+    height: 50%;
+    width: 19%;
+    float: left;
+    margin-left: 1%;
+    margin-right: 2%;
+    margin-top: -6%;
+}
+.InterestedInMe{
+        margin-left: 84px;
+    font-size: 30px;
+    color: white;
+    float: left;
+    margin-top: -188px;
+    margin-right: 168px;
+}
+.eye{
+    margin-left: 43%;
+    color: black;
+}
+.Array{
+    width: 120.4%;
+    background-color: rgba(230, 230, 250, 0.68);
+    display: inline-block;
+}
+.array{
+    margin-left: 22%;
+    display: inline-block;
+    width: 61.5%;
+}
+div label{
+        padding-left: 3%;
+}
+    .label{
+        margin-left: -7px;
+        color:black;
+         font-size: 14px;
+
+    }
+        .ages{
+          
+    padding: 6px 12px;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  
+        }
+.HobbiesInput{
+    margin-top: 4%;
+    margin-left: 2.4%;
+    display: inline-block;
+}
+.form-control{
+ padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.sport{
+    margin-left: 0%
+}
+p{
+        margin: 0 0 10px;
+    color: black;
+    font-weight: bold;
+}   
+
+.btn-danger {
+    color: #fff;
+    margin-top: 15px;
+    width: 29%;
+    height: 43px;
+    border-radius: 10PX;
+    PADDING: 5PX;
+    font-size: 25px;
+    padding-left: 15px;
+    margin-left: 29%;
+    font-weight: bold;
+    padding-right: 15px;
+    background-color: #00000087;
+}
+.delete{
+        margin-left: 10%;
+}
+.Update-Details btn{
+    margin-left: 12%;
+}
+.litelManue{
+        display: inline-grid;
+    margin-top: -20%;
+    text-align: center;
+    float: left;
+    margin-left: 4%;
+}
+.litelManue button{
+border-radius: 1px;
+    background: rgba(0, 0, 0, 0.69);
+    font-weight: bold;
+    width: 104%;
+    color: #f5f5f5;
+    font-size: 160%;
+    box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
+    height: 140%;
+}
+.SecondLitelManue button{
+    border-radius: 1px;
+    background: rgba(0, 0, 0, 0.69);
+    font-weight: bold;
+    width: 104%;
+    color: #f5f5f5;
+    font-size: 184%;
+    box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
+    height: 220%;
+}
+.SecondLitelManue{
+    margin-top: -43%;
+    text-align: center;
+    float: left;
+    margin-left: -32%;
+}
+
+

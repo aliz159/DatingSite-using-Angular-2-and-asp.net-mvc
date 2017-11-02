@@ -1,0 +1,67 @@
+.contact{
+    background-image: url("/img/Background/pexels-photo-318378.jpeg");
+    height: 100%; 
+    width: 100%;
+    background-position: 30% 20%; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    margin-top: -20px;
+      }
+
+.contactForm{
+    margin-left: 70px;
+    margin-top: 30px;
+
+}
+
+h1{
+  margin-left: 100px;
+    margin-top: 76px;
+    margin-bottom: 2px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Cookie';
+    font-size: 80px;
+    text-shadow: 1px 1px 1px #000, 3px 3px 5px red;
+}
+
+form {
+        font-family:'Caveat';
+        font-size: 30px;
+        width: 500px;
+        color: #e6e2d9;
+        background-color: #2e241c;
+        border-radius: 2px;
+        box-shadow: 4px 4px 20px #725337;
+        text-shadow: 1px 1px 1px #000, 1px 1px 2px red; 
+        padding: 20px;
+        opacity: 0.8;
+        margin-bottom: 170px;
+        margin-top: 0px;
+}
+
+input, textarea {
+        margin-bottom: 15px;
+        font-size: 25px;
+        color: black;
+}
+
+select{
+        margin-bottom: 15px;
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+        width: 456px;
+}
+    
+.btnSave{
+        width: 100px;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 10px;
+}
+
+#idMessage{
+       height: 100px;
+}

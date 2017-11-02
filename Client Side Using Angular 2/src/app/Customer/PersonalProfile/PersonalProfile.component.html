@@ -1,0 +1,311 @@
+ <div>
+  <loader [loading]="loading"></loader>
+</div>
+
+<div class="PersonalProfile">
+  <h1>My Profile</h1>
+  
+  <img src="img/{{Image}}" class="img img-circle" *ngIf="showImg" /><br><br>
+  <!-- <button (click)="UpdateDetails()"></button> -->
+  <div><img [attr.src]='file_srcs[0]' alt="Your Profile Picture" *ngIf="!showImg" /> </div>
+
+  <table class="table table-hover" *ngIf="update">
+    <br/>
+    <tr>
+      <th>Question</th>
+      <th>Field</th>
+      <th>Question</th>
+      <th>Field</th>
+    </tr>
+    <tr>
+      <th> name :</th>
+      <td>{{Name}}</td>
+      <th>Movies :</th>
+      <td>{{Movies}}</td>
+    </tr>
+    <tr>
+      <th> Birthday :</th>
+      <td>{{Birthday}}</td>
+      <th>Religion :</th>
+      <td>{{Religion}}</td>
+    </tr>
+    <tr>
+      <th> your gender :</th>
+      <td>{{Gender}}</td>
+      <th>PoliticalView :</th>
+      <td>{{PoliticalView}}</td>
+    </tr>
+    <tr>
+      <th>Interested in gender :</th>
+      <td>{{InterestedInGender}}</td>
+      <th>AboutYou :</th>
+      <td>{{AboutYou}}</td>
+    </tr>
+    <tr>
+      <th>City :</th>
+      <td>{{City}}</td>
+      <th>Quotes :</th>
+      <td>{{Quotes}}</td>
+    </tr>
+    <tr>
+      <th>Area :</th>
+      <td>{{Area}}</td>
+      <th>Age :</th>
+      <td>{{Age}}</td>
+    </tr>
+
+    <tr>
+      <th>Email :</th>
+      <td>{{Email}}</td>
+      <th>WorkField :</th>
+      <td>{{WorkField}}</td>
+    </tr>
+    <tr>
+      <th>Phone :</th>
+      <td>{{Phone}}</td>
+      <th>Smoking :</th>
+      <td>{{Smoking}}</td>
+    </tr>
+    <tr>
+      <th>Max Age Range Interest :</th>
+      <td>{{MaxAgeRangeInterest}}</td>
+      <th>Min Age Range Interest :</th>
+      <td>{{MinAgeRangeInterest}}</td>
+    </tr>
+    <tr>
+
+      <th>Education :</th>
+      <td>{{Education}}</td>
+      <th>EducationInterest :</th>
+      <td>{{EducationInterest}}</td>
+    </tr>
+    <tr>
+      <th>Work Interested :</th>
+      <td>{{WorkFieldInterest}}</td>
+      <th>Sport :</th>
+      <td>{{selectedSport}}</td>
+    </tr>
+    <tr>
+      <th>Hobbies :</th>
+      <td>{{selectedHobbies}}</td>
+      <th>Music :</th>
+      <td>{{selectedSchner}}</td>
+    </tr>      
+  </table>
+
+<div class="litelManue" *ngIf="update">
+  
+  <button (click)="UpdateDetails()">
+    <span class="glyphicon glyphicon-edit"></span>
+    Update Details</button>
+<br>
+  <button data-toggle="modal" data-target="#myModal">
+    <span class="glyphicon glyphicon-remove-sign"></span>
+    Delete my profile</button>
+</div>
+<!--Modal-->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">  
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Hi {{Name}}</h4>
+        </div>
+        <div class="modal-body">
+        <p>Are you sure you want to delete your profile permanently</p>
+        </div>
+        <div class="modal-footer">
+        <button type="button" (click)="Delete()">Yes</button>
+        <button type="button" data-dismiss="modal">No</button>        
+        </div>
+      </div> 
+    </div>
+  </div>
+ 
+
+
+
+<table class="container-fluid" *ngIf="!update">
+    <tr>
+    <td><label for="fname">image</label></td>
+    <td><input type="file" id="btnUpload" value="Upload" (change)="fileChange($event)" class="upload" /></td>
+    <td><label for="fname">Name</label></td>
+    <td><input type="text" class="form-control" id="fname" name="fname" placeholder="user name" required [(ngModel)]="Name" #trvName="ngModel"></td>
+  </tr>
+  <tr>
+  <td><label for="fname">Email</label></td>
+  <td><input type="email" class="form-control" id="email" placeholder="Enter email" name="email" min="6" required [(ngModel)]="Email" #trvEmail="ngModel"></td>
+  <td><label for="fname">Password</label></td>
+  <td><input type="password" id="pwd" class="Input-Password form-control" placeholder="Enter password" name="pwd" required [(ngModel)]="Password"
+          #trvPass="ngModel" disabled></td>
+    </tr>
+<tr>
+  <td><label for="user">Age</label></td>
+  <td> <select required class="selectpicker Select-Age form-control" name="age" [(ngModel)]="Age" #trvMyAge="ngModel">>
+              <option *ngFor="let age of AgeNumber1" [value]="age">
+              {{age}}</option></select></td>
+  <td><label for="pwd">Gender</label></td>
+  <td><select required class="Gender form-control" placeholder="Looking For.." name="love" [(ngModel)]="Gender" #trvLove="ngModel">
+            <option *ngFor="let love of Love1" [value]="love">     
+             {{love}}</option></select></td>
+    </tr> 
+<tr>
+  <td><label>Date of Birth</label></td>
+  <td><input type="date" class="form-control" id="exampleInputDOB1" placeholder="Date of Birth" [(ngModel)]="Birthday" #trvDate="ngModel" name="Date"
+          required></td>
+  <td><label>Area</label></td>
+  <td><select required class="selectpicker form-control" name="area" [(ngModel)]="Area" #trvArea="ngModel">
+             <option *ngFor="let area of Area1" [value]="area">
+             {{area}}</option></select></td>
+    </tr>
+<tr>
+  <td><label for="place">City</label></td>
+  <td><input type="string" class="form-control" id="city" placeholder="City" name="city" required [(ngModel)]="City" #trvCity="ngModel" [(ngModel)]="City"></td>
+  <td><label for="place">Gender Interested</label></td>
+  <td><select required class="selectpicker form-control" placeholder="Looking For.." name="love" [(ngModel)]="InterestedInGender" #trvLove="ngModel">
+           <option *ngFor="let love of Love1" [value]="love">     
+           {{love}}</option></select></td>
+    </tr>
+<tr>  
+  <td><label for="user">occupation</label></td>
+  <td><select required class="selectpicker form-control" name="work" [(ngModel)]="WorkField" #trvWork="ngModel">
+           <option *ngFor="let work of Work1" [value]="work">
+           {{work}}</option></select></td>
+  <td><label for="user">person's occupation</label></td>
+  <td><select required class="selectpicker form-control" name="work" [(ngModel)]="WorkFieldInterest" #trvWork1="ngModel">
+           <option *ngFor="let work of Work1" [value]="work">
+           {{work}}</option></select></td>
+  </tr>            
+<tr>
+  <td><label for="user">Education</label></td>
+  <td><select required class="selectpicker form-control" name="education" [(ngModel)]="Education" #trvEducation="ngModel">
+           <option *ngFor="let education of Education1" [value]="education">
+           {{education}}
+           </option>
+        </select></td>
+  <td><label for="user">Looking someone with an education</label></td>
+  <td><select required class="selectpicker form-control" name="education" [(ngModel)]="EducationInterest" #trvEducation2="ngModel">
+           <option *ngFor="let education of Education1" [value]="education">
+           {{education}}
+           </option>
+        </select></td>
+  </tr>        
+<tr>
+  <td><label for="user">Movies</label></td>
+  <td><input required type="string" class="form-control" name="moviea" [(ngModel)]="Movies" #trvMovie="ngModel"></td>
+  <td><label for="pwd">Smooking</label></td>
+  <td><input class="gender" type="radio" name="smoking" value="Yes" [(ngModel)]="Smoking" checked required> Yes
+      <input class="gender" type="radio" name="smoking" value="No" [(ngModel)]="Smoking"> No</td>
+  </tr>
+<tr>
+  <td><label for="phone">Phone</label></td>
+  <td><input required type="string" class="form-control" id="phone" name="Phone" [(ngModel)]="Phone" #trvPhone="ngModel"></td>
+  <td><label for="user">Interested in ages</label></td>
+  <td><select class="selectpicker ageSelect ages" name="age" [(ngModel)]="MinAgeRangeInterest" #trvAge1="ngModel">
+           <option *ngFor="let item of AgeNumber1" [value]="item">    
+            {{item}}</option></select> -
+      <select class="selectpicker ageSelect ages" name="age" [(ngModel)]="MaxAgeRangeInterest" #trvAge2="ngModel">
+           <option *ngFor="let item of AgeNumber1" [value]="item">    
+           {{item}}</option></select></td>
+  </tr>
+<tr>
+  <td><label for="place">Religion</label></td>
+  <td><select required class="selectpicker form-control" name="religion" [(ngModel)]="Religion" #trvReligion="ngModel">
+           <option *ngFor="let religion of Religion1" [value]="religion">
+           {{religion}}</option></select></td>
+  <td><label for="place">Politic view</label></td>
+  <td><select required class="selectpicker form-control" name="politic" [(ngModel)]="PoliticalView" #trvPoliticView="ngModel">
+           <option *ngFor="let politic of Politic1" [value]="politic">
+           {{politic}}</option></select></td>
+  </tr>
+          <tr>
+            <td>Quotes</td>
+            <td><input required type="text" class="form-control" name="quotes" [(ngModel)]="Quotes" #trvQuotes="ngModel"></td>
+            <td>About me</td>
+            <td><input required type="string" class="form-control" id="yourself" name="yourself" [(ngModel)]="AboutYou" #trvaboutMySelf="ngModel"></td>
+          </tr>
+</table>
+
+
+<div class="array" *ngIf="!update">
+<div class="Array">
+          <label for="user" class="label">Hobbies</label><div class="Inputs">
+          <input required id="Hobbies" class="HobbiesInput form-control" type="text" name="Hobb" (mousedown)="filterHobbies()">  
+          <div class="suggestions">
+            <ul class="hobbis-list" *ngIf="toggleUilistHobbies">
+              <li *ngFor="let item of Hobbies1" (click)="selectHobbies(item)" [value]="item">
+                <a>{{item}}</a>
+              </li>
+            </ul>
+          </div>
+          <div class="selectedDiv">
+            <br/>
+            <div *ngFor="let item of selectedHobbies">
+              <div class="selected">
+                <span>{{item}}</span>
+                <a (click)="removeHobbies(item)">x</a>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+<div class="Array"><label for="user"  class="label">Music schner</label>
+  <div class=" hobbies Inputs">
+            <input required id="schner" class="HobbiesInput form-control" type="text" name="schner" (mousedown)="filteredSchner()">
+            <div class="suggestions">
+              <ul class="hobbis-list" *ngIf="toggleUilistSchner">
+                <li *ngFor="let item of Schner1" (click)="selectSchner(item)" [value]="item">
+                  <a>{{item}}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="selectedDiv">
+              <div *ngFor="let item of selectedSchner">
+                <div class="selected">
+                  <span>{{item}}</span>
+                  <a (click)="removeSchner(item)">x</a>
+                </div>
+              </div>
+            </div>
+</div>
+<div class="Array"><label for="user" class="label">Sport</label>
+  <td><div class="hobbies Inputs">
+            <input required id="Sport" class="HobbiesInput form-control sport" type="text" name="sport" (mousedown)="filteredSport()">
+            <div class="suggestions">
+              <ul class="hobbis-list" *ngIf="toggleUilistSport">
+                <li *ngFor="let item of Sport1" (click)="selectSport(item)">
+                  <a>{{item}}</a>
+                </li>
+              </ul>
+              {{HobbiesArr}}
+            </div>
+            <div class="selectedDiv">
+              <div *ngFor="let item of selectedSport">
+                <div class="selected">
+                  <span>{{item}}</span>
+                  <a (click)="removeSport(item)">x</a>
+                </div>
+              </div>
+            </div>
+          </div>
+</div>
+</div>   
+
+<button class="btn-danger" *ngIf="!update" (click)="UpdateDetailes()">Save Changes</button>
+
+
+
+<div class="SecondLitelManue" *ngIf="!update">
+  
+  <button (click)="UpdateDetails()">
+    <span class="glyphicon glyphicon-edit"></span>
+    {{update ? 'Update Details' : 'My Details'}}</button>
+<br/>
+  
+  <button data-toggle="modal" data-target="#myModal">
+    <span class="glyphicon glyphicon-remove-sign"></span>
+    Delete my profile</button>
+
+</div>
+<i class="material-icons">build</i>
+<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  -->

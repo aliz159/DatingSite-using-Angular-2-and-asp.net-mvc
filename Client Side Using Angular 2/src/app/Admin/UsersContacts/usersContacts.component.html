@@ -1,0 +1,166 @@
+<div>
+    <loader [loading]="loading"></loader>
+</div>
+
+<body class="contact">
+<div class="container" [style.font-size]="'20px'">
+    <h2 *ngIf="!boolEditContact && !loading" [style.color]="'#2e3d50'">Inquiries from Users</h2><br>
+    {{date}}
+    <table class="table table-bordered" *ngIf="!boolEditContact && !loading">
+        <thead>
+            <tr [style.background-color]="'#f5f5f5'">
+                <th>User Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Problem</th>
+                <th>Message</th>
+                <th>Status</th>
+                <th>Last Updated</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of arContacts">
+                <td>{{item.CustomerId}}</td>
+                <td [style.font-weight]="'bold'">{{item.Name}}</td>
+                <td>{{item.Email}}</td>
+                <td>{{item.Phone}}</td>
+                <td>{{item.ProblemType}}</td>
+                <td>{{item.Message}}</td>
+                <td>{{item.Status}}</td>
+                <td>{{item.LastUpdate}}</td>
+                <td><i class="glyphicon glyphicon-edit" id="edit" (click)="AddEditContactForm(item)"></i></td>
+                <td><i class="glyphicon glyphicon-remove" id="remove" (click)="GetContactToDelete(item)" data-toggle="modal"
+                        data-target="#myModal"></i></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="container">
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">DELETE</h3>
+                </div>
+                <div class="modal-body">
+                    <p [style.font-size]="'22px'">Are you sure you want to delete this Contact?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" (click)="DeleteContactHandler()" data-dismiss="modal">Yes</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div *ngIf="boolEditContact">
+    <button (click)="boolEditContact = !boolEditContact" class="btn btn-primary goBackBtn">Go Back To Contacts</button><br><br>
+</div>
+
+<h1 *ngIf="boolEditContact" [style.color]="'#2e3d50'" [style.margin-left]="'80px'" [style.margin-top]="'40px'">Edit Contact</h1>
+
+<div class="container" *ngIf="boolEditContact">
+    <form #trvForm="ngForm" (ngSubmit)="EditContact(trvForm)">
+
+        <div class="form-group" id="inputDiv">
+            <h3>Contacts</h3>
+
+            <label for="iduserId">User Id</label>
+            <input disabled id="iduserId" name="userId" type="number" class="form-control" required [(ngModel)]="userId" #trvUserId="ngModel">
+
+            <div *ngIf="trvUserId.errors && (trvUserId.dirty || trvUserId.touched)" class="alert alert-danger">
+                <div [hidden]="!trvUserId.errors.required">
+                    User Id is required
+                </div>
+            </div>
+
+
+            <label for="idName">Name</label>
+            <input disabled id="idName" name="name" type="text" class="form-control" required [(ngModel)]="name" #trvName="ngModel">
+
+            <div *ngIf="trvName.errors && (trvName.dirty || trvName.touched)" class="alert alert-danger">
+                <div [hidden]="!trvName.errors.required">
+                    Name is required
+                </div>
+            </div>
+
+
+            <label for="idEmail">Email</label>
+            <input disabled id="idEmail" name="email" type="email" class="form-control" required [(ngModel)]="email" #trvEmail="ngModel"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+
+            <div *ngIf="trvEmail.errors && (trvEmail.dirty || trvEmail.touched)" class="alert alert-danger">
+                <div [hidden]="!trvEmail.errors.required">
+                    Email is required
+                </div>
+                <div [hidden]="!trvEmail.errors.pattern">
+                    Enter Only a Valid Email
+                </div>
+            </div>
+
+
+            <label for="idPhone">Phone</label>
+            <input disabled id="idPhone" name="phone" type="text" class="form-control" required [(ngModel)]="phone" #trvPhone="ngModel">
+
+            <div *ngIf="trvPhone.errors && (trvPhone.dirty || trvPhone.touched)" class="alert alert-danger">
+                <div [hidden]="!trvPhone.errors.required">
+                    Phone is required
+                </div>
+            </div>
+
+
+            <label for="idProblem">Problem</label>
+            <input disabled id="idProblem" name="problem" type="text" class="form-control" required [(ngModel)]="problem" #trvProblem="ngModel">
+
+            <div *ngIf="trvProblem.errors && (trvProblem.dirty || trvProblem.touched)" class="alert alert-danger">
+                <div [hidden]="!trvProblem.errors.required">
+                    Problem type is required
+                </div>
+            </div>
+
+
+            <label for="idMessage">Message</label>
+            <input disabled id="idMessage" name="message" type="text" class="form-control" required [(ngModel)]="message" #trvMessage="ngModel">
+
+            <div *ngIf="trvMessage.errors && (trvMessage.dirty || trvMessage.touched)" class="alert alert-danger">
+                <div [hidden]="!trvMessage.errors.required">
+                    Message is required
+                </div>
+            </div>
+
+
+            <label for="idDateTime">Message</label>
+            <input disabled id="idDateTime" name="lastUpdate" type="text" class="form-control" required [(ngModel)]="lastUpdate" #trvDateTime="ngModel">
+
+            <div *ngIf="trvDateTime.errors && (trvDateTime.dirty || trvDateTime.touched)" class="alert alert-danger">
+                <div [hidden]="!trvDateTime.errors.required">
+                    Date and Time are required
+                </div>
+            </div>
+
+
+           <label for="user">Status</label>
+           <select required class="conStatus" name="status" [(ngModel)]="status" #trvStatus="ngModel">
+           <option *ngFor="let status of Status" [value]="status">
+           {{status}}</option></select>
+
+
+        </div>
+        <button [disabled]="!trvForm.valid" class="btn btn-primary" id="btnSave">Save</button>
+        <p *ngIf="boolmsgEdit" class="alert alert-danger" [style.color]="'red'" [style.font-size]="'30px'">{{msgEdit}}</p>
+    </form>
+</div>

@@ -1,0 +1,308 @@
+<div>
+    <loader [loading]="loading"></loader>
+</div>
+<body class="contact">
+
+<h2 *ngIf="!boolAddStory && !boolEditStory && !loading" [style.color]="'#2e3d50'" [style.margin-left]="'70px'">All Storys</h2><br>
+
+<div *ngIf="!boolAddStory && !boolEditStory && !loading">
+    <button (click)="AddAddStoryForm()" class="btn btn-primary addBtn" [style.font-size]="'30px'" [style.background-color]="'#2e3d50'"><i class="glyphicon glyphicon-plus" [style.font-size]="'20px'"></i>Add Story</button><br><br>
+</div>
+
+<h1 *ngIf="boolAddStory" [style.color]="'#2e3d50'" [style.margin-left]="'80px'" [style.margin-top]="'40px'">
+    Add a Story</h1>
+<div *ngIf="boolAddStory">
+    <button (click)="boolEditStory = !boolEditStory && boolAddStory = !boolAddStory" class="btn btn-primary goBackBtn">Go Back To All Stories</button><br><br>
+</div>
+
+<div class="container" *ngIf="boolAddStory">
+<form #trvForm="ngForm" (ngSubmit)="AddStory(trvForm)">
+
+        <div class="form-group" id="inputDiv">
+            <h3>Story</h3>
+
+  <div> 
+  <img [attr.src]='file_srcs[0]' alt="Your Profile Picture" class="profilePic"/> 
+</div>
+
+<input type="file" id="btnUpload" value="Upload" (change)="fileChange($event)" class="upload" 
+ [(ngModel)]="ImgFilefromUser" name="pic" #trvImg="ngModel" /> 
+
+            <!--
+            <div>
+                <img [attr.src]='file_srcs[0]' alt="The Couple Picture" class="profilePic" [style.margin-left]="'10px'" 
+                name="pic"/>
+            </div>
+
+            <input type="file" id="btnUpload" value="Upload" (change)="fileChange($event)" class="upload" 
+            name="pic" [(ngModel)]="image" #trvImg="ngModel" />
+
+            <div *ngIf="trvImg.errors && (trvImg.dirty || trvImg.touched)" class="alert alert-danger">
+                <div [hidden]="!trvImg.errors.required">Image is required</div>
+            </div> -->
+
+            <label for="idfirstCustId">First Customer Id</label>
+            <input id="idfirstCustId" name="firstCustId" type="number" class="form-control" required [(ngModel)]="firstCustId" #trvFirstCustId="ngModel">
+            <div *ngIf="trvFirstCustId.errors && (trvFirstCustId.dirty || trvFirstCustId.touched)" class="alert alert-danger">
+                <div [hidden]="!trvFirstCustId.errors.required">
+                    First customer id is required
+                </div>
+            </div>
+
+            <label for="idsecondCustId">Second Customer Id</label>
+            <input id="idsecondCustId" name="secondCustId" type="number" class="form-control" required [(ngModel)]="secondCustId" #trvSecondCustId="ngModel">
+            <div *ngIf="trvSecondCustId.errors && (trvSecondCustId.dirty || trvSecondCustId.touched)" class="alert alert-danger">
+                <div [hidden]="!trvSecondCustId.errors.required">
+                    Second customer id is required
+                </div>
+            </div>
+
+            <label for="idfirstCustName">First Customer Name</label>
+            <input id="idfirstCustName" name="firstCustName" type="text" class="form-control" required [(ngModel)]="firstCustName" #trvFirstCustName="ngModel">
+            <div *ngIf="trvFirstCustName.errors && (trvFirstCustName.dirty || trvFirstCustName.touched)" class="alert alert-danger">
+                <div [hidden]="!trvFirstCustName.errors.required">
+                    First Customer Name is required
+                </div>
+            </div>
+
+            <label for="idsecondCustName">Second Customer Name</label>
+            <input id="idsecondCustName" name="secondCustName" type="text" class="form-control" required [(ngModel)]="secondCustName"
+                #trvSecondCustName="ngModel">
+            <div *ngIf="trvSecondCustName.errors && (trvSecondCustName.dirty || trvSecondCustName.touched)" class="alert alert-danger">
+                <div [hidden]="!trvSecondCustName.errors.required">
+                    Second Customer Name is required
+                </div>
+            </div>
+
+            <label for="idCities">Cities</label>
+            <input id="idCities" name="cities" type="text" class="form-control" required [(ngModel)]="cities" #trvCities="ngModel">
+            <div *ngIf="trvCities.errors && (trvCities.dirty || trvCities.touched)" class="alert alert-danger">
+                <div [hidden]="!trvCities.errors.required">
+                    Customers Cities are required
+                </div>
+            </div>
+
+            <label for="idlongStory">Full Story</label>
+            <textarea rows="15" id="idlongStory" name="longStory" class="form-control" required [(ngModel)]="longStory" #trvLongStory="ngModel">
+            </textarea>
+            <div *ngIf="trvLongStory.errors && (trvLongStory.dirty || trvLongStory.touched)" class="alert alert-danger">
+                <div [hidden]="!trvLongStory.errors.required">
+                    Story is required
+                </div>
+            </div>
+
+            <label for="idshortStory">Short Story</label>
+            <textarea rows="3" maxlength="99" id="idshortStory" name="shortStory" class="form-control" required [(ngModel)]="shortStory"
+                #trvShortStory="ngModel" placeholder="Enter a short story">
+            </textarea>
+            <div *ngIf="trvShortStory.errors && (trvShortStory.dirty || trvShortStory.touched)" class="alert alert-danger">
+                <div [hidden]="!trvShortStory.errors.required">
+                    Short Story is required
+                </div>
+            </div><br><br>
+
+        </div>
+        <button [disabled]="!trvForm.valid" class="btn btn-primary" id="btnSave"
+        data-toggle="modal" data-target="#myModal1">Save</button>
+        <p *ngIf="boolmsgAdd" class="alert alert-danger" [style.color]="'red'" [style.size]="'30px'">{{msgAdd}}</p>
+    </form>
+</div>
+
+
+
+
+
+<!--Modal-->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">  
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Hi {{Name}}</h4>
+        </div>
+        <div class="modal-body">
+        <p>{{Massage}}</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+
+
+
+
+
+<div class="container" [style.font-size]="'20px'">
+
+    <table class="table table-bordered" *ngIf="!boolEditStory && !boolAddStory && !loading">
+        <thead>
+            <tr [style.background-color]="'#f5f5f5'">
+                <th>First User Id</th>
+                <th>Second User Id</th>
+                <th>First User Name</th>
+                <th>Second User Name</th>
+                <th>Cities</th>
+                <th>Story</th>
+                <th>Image</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of arStories">
+                <td>{{item.CustomerIdFirst}}</td>
+                <td>{{item.CustomerIdSecond}}</td>
+                <td>{{item.FirstCustomerName}}</td>
+                <td>{{item.SecondCustomerName}}</td>
+                <td>{{item.Cities}}</td>
+                <td>{{item.Story}}</td>
+                <td> <img src="{{item.Image}}" class="img" /></td>
+                <td><i class="glyphicon glyphicon-edit" id="edit" (click)="AddEditStoryForm(item)"></i></td>
+                <td><i class="glyphicon glyphicon-remove" id="remove" (click)="GetStoryToDelete(item)" data-toggle="modal" data-target="#myModal"></i></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+<div class="container">
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">DELETE</h3>
+                </div>
+                <div class="modal-body">
+                    <p [style.font-size]="'22px'">Are you sure you want to delete this story?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" (click)="DeleteStoryHandler()" data-dismiss="modal">Yes</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div *ngIf="boolEditStory">
+    <button (click)="boolEditStory = !boolEditStory && boolAddStory = !boolAddStory" class="btn btn-primary goBackBtn">Go Back To Stories</button><br><br>
+</div>
+
+<h1 *ngIf="boolEditStory" [style.color]="'#2e3d50'" [style.margin-left]="'80px'" [style.margin-top]="'40px'">
+    Edit Story</h1>
+
+<div class="container" *ngIf="boolEditStory">
+<form #trvForm="ngForm" (ngSubmit)="EditStory(trvForm)">
+
+        <div class="form-group" id="inputDiv">
+            <h3>Story</h3>
+<!-- 
+ [(ngModel)]="ImgFilefromUser"  #trvImg="ngModel" />   -->
+            <div>
+                <img [attr.src]='file_srcs[0]' src="{{image}}" alt="The Couple Picture" class="profilePic" [style.margin-left]="'10px'" />
+            </div>
+            <input type="file" id="btnUpload" value="Upload" (change)="fileChange($event)" class="upload" 
+            name="pic" [(ngModel)]="image" #trvImg="ngModel"  />
+
+            <div *ngIf="trvImg.errors && (trvImg.dirty || trvImg.touched)" class="alert alert-danger">
+                <div [hidden]="!trvImg.errors.required">Image is required</div>
+            </div>
+
+
+            <label for="idfirstCustId">First Customer Id</label>
+            <input id="idfirstCustId" name="firstCustId" type="number" class="form-control" required [(ngModel)]="firstCustId" #trvFirstCustId="ngModel">
+
+            <div *ngIf="trvFirstCustId.errors && (trvFirstCustId.dirty || trvFirstCustId.touched)" class="alert alert-danger">
+                <div [hidden]="!trvFirstCustId.errors.required">
+                    First customer id is required
+                </div>
+            </div>
+
+            <label for="idsecondCustId">Second Customer Id</label>
+            <input id="idsecondCustId" name="secondCustId" type="number" class="form-control" required [(ngModel)]="secondCustId" #trvSecondCustId="ngModel">
+
+            <div *ngIf="trvSecondCustId.errors && (trvSecondCustId.dirty || trvSecondCustId.touched)" class="alert alert-danger">
+                <div [hidden]="!trvSecondCustId.errors.required">
+                    Second customer id is required
+                </div>
+            </div>
+
+            <label for="idfirstCustName">First Customer Name</label>
+            <input id="idfirstCustName" name="firstCustName" type="text" class="form-control" required [(ngModel)]="firstCustName" #trvFirstCustName="ngModel">
+
+            <div *ngIf="trvFirstCustName.errors && (trvFirstCustName.dirty || trvFirstCustName.touched)" class="alert alert-danger">
+                <div [hidden]="!trvFirstCustName.errors.required">
+                    First Customer Name is required
+                </div>
+            </div>
+
+            <label for="idsecondCustName">Second Customer Name</label>
+            <input id="idsecondCustName" name="secondCustName" type="text" class="form-control" required [(ngModel)]="secondCustName"
+                #trvSecondCustName="ngModel">
+
+            <div *ngIf="trvSecondCustName.errors && (trvSecondCustName.dirty || trvSecondCustName.touched)" class="alert alert-danger">
+                <div [hidden]="!trvSecondCustName.errors.required">
+                    Second Customer Name is required
+                </div>
+            </div>
+
+
+            <label for="idCities">Cities</label>
+            <input id="idCities" name="cities" type="text" class="form-control" required [(ngModel)]="cities" #trvCities="ngModel">
+
+            <div *ngIf="trvCities.errors && (trvCities.dirty || trvCities.touched)" class="alert alert-danger">
+                <div [hidden]="!trvCities.errors.required">
+                    Customers Cities are required
+                </div>
+            </div>
+
+
+            <label for="idlongStory">Full Story</label>
+            <textarea rows="15" id="idlongStory" name="longStory" class="form-control" required [(ngModel)]="longStory" #trvLongStory="ngModel">
+            </textarea>
+            <div *ngIf="trvLongStory.errors && (trvLongStory.dirty || trvLongStory.touched)" class="alert alert-danger">
+                <div [hidden]="!trvLongStory.errors.required">
+                    Story is required
+                </div>
+            </div>
+
+
+            <label for="idshortStory">Short Story</label>
+            <textarea rows="3" maxlength="99" id="idshortStory" name="shortStory" class="form-control" required [(ngModel)]="shortStory"
+                #trvShortStory="ngModel" placeholder="Enter a short story">
+            </textarea>
+            <div *ngIf="trvShortStory.errors && (trvShortStory.dirty || trvShortStory.touched)" class="alert alert-danger">
+                <div [hidden]="!trvShortStory.errors.required">
+                    Short Story is required
+                </div>
+            </div><br><br>
+
+        </div>
+        <button [disabled]="!trvForm.valid" class="btn btn-primary" id="btnSave"
+        data-toggle="modal" data-target="#myModal2">Save</button>
+        <p *ngIf="boolmsgEdit" class="alert alert-danger" [style.color]="'red'" [style.font-size]="'30px'">{{msgEdit}}</p>
+    </form>
+</div>
+
+
+
+<!--Modal-->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">  
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Hi {{Name}}</h4>
+        </div>
+        <div class="modal-body">
+        <p>{{Massage}}</p>
+        </div>
+      </div> 
+    </div>
+  </div>

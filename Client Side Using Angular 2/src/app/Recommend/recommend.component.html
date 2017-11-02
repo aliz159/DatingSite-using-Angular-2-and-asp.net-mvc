@@ -1,0 +1,65 @@
+<div>
+  <loader [loading]="loading"></loader>
+</div>
+
+
+<div class="container recommend" [style.font-size]="'20px'">
+    <h1>Recommend to a friend</h1>
+        <form #trvForm="ngForm" (ngSubmit)="SendToEmail(trvForm)" class="recommendForm">
+
+            <div class="form-group" id="inputDiv">
+
+                <i class="glyphicon glyphicon-user"></i>
+                <label for="idName">Your Name</label>
+                <input id="idName" name="SenderName" type="text" class="form-control" required [(ngModel)]="SenderName" #trvName="ngModel" disabled>
+
+                <div *ngIf="trvName.errors && (trvName.dirty || trvName.touched)" class="alert alert-danger">
+                    <div [hidden]="!trvName.errors.required">
+                        Name is required
+                    </div>
+                </div>
+
+                <i class="glyphicon glyphicon-user"></i>
+                <label for="idFName">Your Friend's Name</label>
+                <input id="idFName" name="RecipientName" type="text" class="form-control" required [(ngModel)]="RecipientName" #trvFriendName="ngModel">
+
+                <div *ngIf="trvFriendName.errors && (trvFriendName.dirty || trvFriendName.touched)" class="alert alert-danger">
+                    <div [hidden]="!trvFriendName.errors.required">
+                        Your Friend Name is required
+                    </div>
+                </div>
+
+                
+                 <i class="glyphicon glyphicon-envelope"></i>
+                <label for="idFEmail">Your Friend's Email</label>
+                 <input id="idFEmail" name="RecipientEmail" type="text" class="form-control" required email [(ngModel)]="RecipientEmail" #trvFriendEmail="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+
+                 <div *ngIf="trvFriendEmail.errors && (trvFriendEmail.dirty || trvFriendEmail.touched)" class="alert alert-danger">
+                    <div [hidden]="!trvFriendEmail.errors.required">
+                        Your Friend Email is required
+                    </div>
+                    <div [hidden]="!trvFriendEmail.errors.pattern">
+                        Email is invalid
+                    </div>
+                </div>
+                  
+                
+                <i class="glyphicon glyphicon-pencil"></i>
+                <label for="idMessage">Message</label>
+                <textarea cols="40" rows="5" id="idMessage" name="message" type="text" class="form-control" required [(ngModel)]="message" #trvMessage="ngModel" placeholder="I want to tell you about a cool and unique dating site">
+                </textarea> 
+                <div *ngIf="trvMessage.errors && (trvMessage.dirty || trvMessage.touched)" class="alert alert-danger">
+                    <div [hidden]="!trvMessage.errors.required">
+                        Message is required
+                    </div>
+                </div>
+
+
+
+            </div>
+            <button [disabled]="!trvForm.valid" class="btn btn-primary btnSave"
+            data-toggle="modal" data-target="#myModal">Save</button>
+        </form>
+    <br>
+
+

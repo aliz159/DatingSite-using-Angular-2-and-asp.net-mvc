@@ -1,0 +1,56 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" *ngIf="nav.visible">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img class="logo" src="/img/Background/twoHeartsRedLogo.png"/>
+    </div>
+    <ul class="nav navbar-nav">     
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon circle-icon glyphicon-user"></span>  My Profile<span class="caret"></span></a>        
+        <ul class="dropdown-menu">
+          <li><a href="#"  [routerLink]="['/PersonalProfile']">Personal Profile</a></li>
+          <li><a href="#" [routerLink]="['/WelcomeUser']">Aoptimat Matches</a></li>
+          <li><a href="#" [routerLink]="['/Interest']">Interesed in me</a></li>         
+          <li><a href="#" [routerLink]="['/WatchList']">Watch List</a></li>        </ul>
+      </li>
+    <li><a href="#" [routerLink]="['/AllProfiles']">Watch all profiles</a></li>
+    <li><a href="#" [routerLink]="['/stories']">Success Stories</a></li>
+    <li><a href="#" [routerLink]="['/Contact']">Contact Us</a></li>
+    <li><a href="#" [routerLink]="['/Recommend']">Recommend a friend</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+     <li><a href="#" (click)="logout()"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" *ngIf="nav.adminVisible">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img class="logo" src="/img/Background/twoHeartsRedLogo.png"/>
+    </div>
+    <ul class="nav navbar-nav">     
+          <li><a href="#" [routerLink]="['/ViewUsers']"><span class="glyphicon circle-icon glyphicon-user"></span> Users</a></li>   
+          <li><a href="#" [routerLink]="['/Stories']">Success Stories</a></li>  
+          <li><a href="#" [routerLink]="['/UsersContacts']">Contacts</a></li>     
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+     <li><a href="#" (click)="adminLogout()"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <router-outlet></router-outlet>
+
+<body class="home"  *ngIf="nav.homeVisible">
+  <div class="container">
+  <h1>TheOne</h1>  
+
+  <h3 class="transbox">Find your other half for life<br/> a quick and easy way to get to know each other</h3>
+  <ul>
+  <li id="Register" [routerLink] = "['/register']">Register</li>  
+  <li><img src="/img/Background/16510631.gif"></li>  
+  <li id="Login" [routerLink] = "['/login']">Login</li>
+  </ul>
+ </div>

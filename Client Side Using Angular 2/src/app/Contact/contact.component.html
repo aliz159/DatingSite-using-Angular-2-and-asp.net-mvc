@@ -1,0 +1,97 @@
+
+<div>
+  <loader [loading]="loading"></loader>
+</div>
+
+
+<div class="container contact" [style.font-size]="'20px'">
+    <h1>Contact Us</h1>
+        <form #trvForm="ngForm" (ngSubmit)="HandelContact(trvForm)" class="contactForm">
+
+            <div class="form-group" id="inputDiv">
+
+                <i class="glyphicon glyphicon-user"></i>
+                <label for="idName">Name</label>
+                <input disabled id="idName" name="name" type="text" class="form-control" required [(ngModel)]="name" #trvName="ngModel">
+
+                <div *ngIf="trvName.errors && (trvName.dirty || trvName.touched)" class="alert alert-danger">
+                    <div [hidden]="!trvName.errors.required">
+                        Name is required
+                    </div>
+                </div>
+
+
+                
+              <i class="glyphicon glyphicon-envelope"></i>
+                <label for="idFEmail">Email</label>
+                 <input disabled id="idFEmail" name="email" type="text" class="form-control" required email [(ngModel)]="email" #trvEmail="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+
+                 <div *ngIf="trvEmail.errors && (trvEmail.dirty || trvEmail.touched)" class="alert alert-danger">
+                    <div [hidden]="!trvEmail.errors.required">
+                        Your Email is required
+                    </div>
+                    <div [hidden]="!trvEmail.errors.pattern">
+                        Email is invalid
+                    </div>
+                </div>
+
+
+                <i class="glyphicon glyphicon-earphone"></i>
+                <label for="idPhone">Phone</label>
+                <input id="idPhone" name="phone" type="text" class="form-control" required [(ngModel)]="phone" #trvPhone="ngModel" pattern="[0-9]{10}">
+
+                <div *ngIf="trvPhone.errors && (trvPhone.dirty || trvPhone.touched)" class="alert alert-danger">
+                    <div [hidden]="!trvPhone.errors.required">
+                        Your must enter a phone number
+                    </div>
+                    <div [hidden]="!trvPhone.errors.pattern">
+                        Phone number is invalid
+                    </div>
+                </div>
+                  
+                
+
+                <label for="idProblem">Problem Type</label><br>
+                <select id="idProblem"  [(ngModel)]="problem" #trvProblem="ngModel" name="problem">
+                    <option *ngFor="let value of arProblems" [value]="value" required [style.color]="'black'">
+                     {{value}}
+                    </option>
+                </select>
+
+                <div *ngIf="trvProblem.errors && (trvProblem.dirty || trvProblem.touched)" class="alert alert-danger">
+                    <div [hidden]="!trvProblem.errors.required">
+                        Subscription is required
+                    </div>
+                </div><br>
+
+
+                <i class="glyphicon glyphicon-pencil"></i>
+                <label for="idMessage">Message</label>
+                <textarea cols="40" rows="5" id="idMessage" name="message" type="text" class="form-control" required [(ngModel)]="message" #trvMessage="ngModel" placeholder="Write your message here">
+                </textarea> 
+                <div *ngIf="trvMessage.errors && (trvMessage.dirty || trvMessage.touched)" class="alert alert-danger">
+                    <div [hidden]="!trvMessage.errors.required">
+                        Message is required
+                    </div>
+                </div>
+            </div>
+            <button [disabled]="!trvForm.valid" class="btn btn-primary btnSave"
+            data-toggle="modal" data-target="#myModal">Save</button>
+        </form>
+    <br>
+
+<!--Modal-->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">  
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Hi {{Name}}</h4>
+        </div>
+        <div class="modal-body">
+        <p>{{MassageSuccessed}}</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>

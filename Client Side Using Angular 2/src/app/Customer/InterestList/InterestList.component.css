@@ -1,0 +1,55 @@
+.title{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Cookie';
+    color: white;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px #000;
+    margin-top: 5%;
+}
+.card{
+    /*   
+    text-shadow: 1px 1px 1px black;
+*/    box-shadow: 5px 5px 8px #888888;
+    border: 1px solid white;
+    background-color: rgba(230, 230, 250, 0.68);
+    margin-bottom: 40px;
+    width: 597px;
+    font-family: myFirstFont;
+    color: black;
+    padding: 10px;
+    float: left;
+    margin-top: 18px;
+    margin-left: 15px;
+    margin-right: 13px;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+#CardOfUser{
+    margin-left: 10px;
+}
+
+
+    .PublicProfile{
+width: 100%;
+    margin-top: -1%;
+    box-shadow: 5px 5px 8px #888888;
+    border: 1px solid white;
+    background-color: rgba(230, 230, 250, 0.68);
+    }
+
+    .viewProfile{
+    margin-left: 37%;
+    margin-top: -24%;
+    font-size: 27px;
+}
+.imgProfile{
+    width: 31%;
+    height: 286px;
+    margin-left: 2%;
+}
+p{
+    text-align: center;
+    font-size: 40px;
+}

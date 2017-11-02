@@ -1,0 +1,121 @@
+<div>
+  <loader [loading]="loading"></loader>
+</div>
+
+<body class="contact">
+<div class="container" [style.font-size]="'20px'">
+  <h2 *ngIf="!boolEditUser && !loading" [style.color]="'#2e3d50'">Users</h2><br>
+
+  <table class="table table-bordered" *ngIf="!boolEditUser && !loading">
+    <thead>
+      <tr [style.background-color]="'#f5f5f5'">
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>About</th>
+        <th>Quotes</th>
+        <th>Image</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of arUsers">
+        <td [style.font-weight]="'bold'">{{item.Name}}</td>
+        <td>{{item.Email}}</td>
+        <td>{{item.Phone}}</td>
+        <td>{{item.AboutYou}}</td>
+        <td>{{item.Quotes}}</td>
+        <td> <img src="img/{{item.Image}}" class="img"/></td>
+        <td><i class="glyphicon glyphicon-edit" id="edit" (click)="AddEditUserForm(item)"></i></td>
+        <td><i class="glyphicon glyphicon-remove" id="remove" (click)="GetUserToDelete(item)" data-toggle="modal" data-target="#myModal"></i></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="container">
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">DELETE</h3>
+        </div>
+        <div class="modal-body">
+          <p [style.font-size]="'22px'">Are you sure you want to delete this user?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" (click)="DeleteUserHandler()" data-dismiss="modal">Yes</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div *ngIf="boolEditUser">
+ <button (click)="boolEditUser = !boolEditUser" class="btn btn-primary goBackBtn">Go Back To Users</button><br><br>
+</div>
+
+<h1 *ngIf="boolEditUser" [style.color]="'#2e3d50'" [style.margin-left]="'80px'" [style.margin-top]="'40px'">Edit User</h1>
+
+<div class="container" *ngIf="boolEditUser">
+  <form #trvForm="ngForm" (ngSubmit)="EditUser(trvForm)">
+
+    <div class="form-group" id="inputDiv">
+      <h3>User</h3>
+
+      <label for="idName">Name</label>
+      <input disabled id="idName" name="name" type="text" class="form-control" required [(ngModel)]="name" #trvName="ngModel">
+
+      <div *ngIf="trvName.errors && (trvName.dirty || trvName.touched)" class="alert alert-danger">
+        <div [hidden]="!trvName.errors.required">
+          Name is required
+        </div>
+      </div>
+
+
+      <label for="idEmail">Email</label>
+      <input disabled id="idEmail" name="email" type="email" class="form-control" required [(ngModel)]="email" #trvEmail="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+
+      <div *ngIf="trvEmail.errors && (trvEmail.dirty || trvEmail.touched)" class="alert alert-danger">
+        <div [hidden]="!trvEmail.errors.required">
+          Email is required
+        </div>
+        <div [hidden]="!trvEmail.errors.pattern">
+          Enter Only a Valid Email
+        </div>
+      </div>
+
+
+      <label for="idPhone">Phone</label>
+      <input id="idPhone" name="phone" type="string" class="form-control" [(ngModel)]="phone" #trvPhone="ngModel">
+
+
+
+      <br>
+      <label for="idAbout">About</label>
+      <input id="idAbout" name="about" type="text" class="form-control" [(ngModel)]="about" #trvAbout="ngModel">
+
+
+      <label for="idQuotes">Quotes</label>
+      <input id="idQuotes" name="quotes" type="text" class="form-control" [(ngModel)]="quotes" #trvQuotes="ngModel">
+
+      <br><img src="img/{{image}}" class="img" *ngIf="!boolImgRemoved"/><br>
+      <i class="glyphicon glyphicon-remove" (click)="DeleteImgHandler()" *ngIf="!boolImgRemoved">Remove</i>     
+      <span *ngIf="boolImgRemoved">Image was removed</span>
+
+    </div>
+    <button [disabled]="!trvForm.valid" class="btn btn-primary" id="btnSave">Save</button>
+    <p *ngIf="boolmsgEdit" class="alert alert-danger" [style.color]="'red'" [style.font-size]="'30px'">{{msgEdit}}</p>
+  </form>
+</div>

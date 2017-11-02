@@ -1,0 +1,195 @@
+h1{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    
+    font-weight: bold;
+    font-family: 'Cookie';
+    font-size: 80px;
+    text-shadow: 1px 1px 1px #000, 3px 3px 5px #8a6615; 
+}
+span{
+    font-size: 35px;
+}
+h3{
+    margin-left: 155px;
+}
+input{
+    width: 300px;
+    height: 45px;
+    border-radius: 5px ;
+        border: 1px solid #ccc;
+    margin: 5px;
+}
+.gender{
+    width: 70px;
+    height: 20px;
+  
+    font-weight: bold;
+}
+.maleFemale{
+    font-size: 25px;
+}
+select{
+    width: 300px;
+    height: 45px;
+    border-radius: 5px ;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+button{
+    font-size: 15px;
+    margin-left: 90px;
+}
+.checkbox{
+    font-size: 15px;
+}
+#checkbox{
+    width: 20px;
+    height: 20px;
+}
+.alert{
+     width: 297px;
+    height: 25px;
+    padding: 3px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+.alertError{
+        margin-left: 44px;
+}
+.fieldBlock
+    {
+    display: block;
+margin-top: 50px;
+    float: left;
+    
+    }
+form{
+    padding: 20px;
+    margin-left: 26%;
+}
+#yourself{
+    height: 100px;
+}
+.FormStyleLeft{
+    float: left;
+}
+.fa/*gender icon*/{
+    font-size: 40px;
+}
+.labelLeft { 
+    float: left;  
+    margin-top: 50px;
+}
+.FirstForm{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.18);
+    padding: 2%;
+    padding-left: 13%;
+    width: 66%;
+    box-shadow: 5px 5px 8px #fff;
+    background-color: rgba(230, 230, 250, 0.68);
+    border: 1px solid black;
+    /*   
+    border: 1px solid red;
+    margin-bottom: 40px;
+    font-family: myFirstFont;
+    font-size: 20px;
+    font-family: cursive;  */
+}
+.col-sm-4{
+             
+    background-color: rgba(230, 230, 250, 0.68);
+}
+
+
+
+.ageSelect{
+    width: 140px;
+}
+
+.selected{
+	border:solid #4CAF50 1px;
+	float:left; 
+	margin:2px;
+    padding:2px 15px;
+    
+}
+.selected span{
+    font-size: 16px;
+}
+ 
+.selected a{
+	cursor:pointer;
+	font-weight:bold;
+}
+.suggestions{
+position: relative;
+}
+.hobbis-list{
+        border: 1px solid rgba(128, 128, 128, 0.39);
+    width: 301px;
+    margin-top: -5px;
+    padding: 0;
+    margin-left: 4px;
+    POSITION: absolute;
+    BACKGROUND: #fff;
+    top: -2px;
+    left: 0;
+}
+.hobbis-list li{
+    list-style: none;
+    padding: 2px;
+
+}
+.hobbis-list li:hover{
+     background: rgba(128, 128, 128, 0.17);
+}
+.container.hobbies{
+     margin-left: -15px;
+}
+.selectedDiv{
+    display: inline-block;
+    border:solid gray 1px;
+    width: 27%;
+    height: 100px;
+    overflow: scroll;
+}.upload{
+  margin-left: 9%;
+}
+  .profilePic{
+          margin-left: 13%;
+  }
+.secondForm{
+        margin-left: 19%;
+
+        /* display: inline-block;
+    background-color: rgba(0, 0, 0, 0.18);
+    padding: 25px;
+    padding-left: 13%;
+    width: 66%;
+  */
+}.row{
+    width: 121%;
+        margin-right: -15px;
+    margin-left: -73px;
+}
+.col-sm-4-1{
+padding-left: 4%;
+}
+.col-sm-4-2{
+    padding-left: 3%;
+    box-shadow: 5px 5px 8px #fff;
+}
+.labelSmoking{
+    margin-top: 15px;
+}
+.labelAges{
+        margin-top: 9px;
+}
+.SaveProfileButton{
+        margin-top: 4.7%;
+    margin-left: 28%;
+    width: 31%;;
+}

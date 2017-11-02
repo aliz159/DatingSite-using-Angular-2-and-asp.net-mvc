@@ -1,0 +1,167 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+.menu{
+    margin-bottom: 0px;
+}
+.home{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0,0,0,0.5)),
+   url("/img/Background/backgroundImg2.jpg");
+     height: 100vh; 
+    width: 100%;
+    background-position: 30% 20%; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    /*margin-top: -20px;*/
+    /* margin-bottom: -20px; */
+}
+
+.login{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0)), 
+    url('/img/Background/pexels-photo-307791.jpeg');  
+   height: 100vh; 
+    width: 100%;
+    /*background-position: 30% 20%; */
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    margin-top: -20px;
+}
+
+.register{
+  background-image: url('/img/Background/pexels-photo-307791.jpeg');
+     height: 100%; 
+    width: 100%;
+  /*  background-position: 30% 20%; */
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+
+}
+
+.Storeys{
+  background-image: url("/img/Background/pexels-photo-318378.jpeg");
+    height: 100%; 
+    width: 100%;
+    background-position: 30% 20%; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    margin-top: -20px;
+}
+.welcome{
+  background-image: url('/img/Background/welcome.jpeg');
+     height: 100vh; 
+    width: 100%;
+    background-position: 30% 20%; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    margin-top: -20px;
+}
+
+.PersonalProfile{
+    background-image: url(/img/Background/pexels-photo-318378.jpeg);
+    width: 100%;
+    background-position: 30% 20%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100%;
+    position: absolute;
+    max-height: 3399vh;
+    min-height: 100vh;
+}
+  .AllProfile{
+    background-image: url(/img/Background/pexels-photo-318378.jpeg);
+    width: 100%;
+    background-position: 30% 20%;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100%;
+    position: absolute;
+    max-height: 3399vh;
+    min-height: 100vh;
+}
+  .WhachList{
+     background-image: url("/img/Background/pexels-photo-318378.jpeg");
+    height: 100vh; 
+    width: 100%;
+    background-position: 30% 20%; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    margin-top: -20px;
+  }
+/* .AllProfiles{
+  background-image: url("/img/Background/pexels-photo-318378.jpeg");
+    height: 100%; 
+    width: 100%;
+    margin-bottom: 270px;
+    background-position: 30% 20%; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    margin-top: -20px;
+} */
+
+  .pokeball {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  display: inline-block;
+  animation: rotate 1.5s linear infinite;
+  left: calc(50% - 75px);
+  top: calc(50% - 75px);
+}
+.pokeball .inner {
+  width: 150px;
+  height: 75px;
+  border: 48px solid #3498db;
+  box-sizing: border-box;
+}
+.pokeball .upper, .pokeball .lower {
+  width: 100%;
+  position: absolute;
+  height: calc(50% - 5px);
+  overflow: hidden;
+}
+.pokeball .upper {
+  top: 0;
+}
+.pokeball .upper .inner {
+  border-radius: 123px 123px 0 0;
+  border-bottom: 0;
+  margin-bottom: -5px;
+}
+.pokeball .lower {
+  bottom: 0;
+}
+.pokeball .lower .inner {
+  margin-top: -5px;
+  border-radius: 0 0 123px 123px;
+  border-top: 0;
+}
+.pokeball .middle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #3498db;
+  position: absolute;
+  left: calc(50% - 20px);
+  top: calc(50% - 20px);
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loader {
+    margin-left: 600px;
+    margin-top: 100px;
+}

@@ -1,0 +1,41 @@
+h2{
+        font-size: 38px;
+    margin-top: 7%;
+    text-align: center;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+#remove:hover, #edit:hover{
+  color:#286090;
+  cursor: pointer;
+}
+form{
+    background-color: #ebeff2;
+    color: #2e3d50;
+    padding: 20px;
+    width: 720px;  
+}
+    #idName, #idEmail, #idPhone, #idAbout, #idQuotes, #idImage{
+    width: 620px;
+    height: 45px;
+  }
+  label{
+    margin-top: 20px; 
+  }
+#btnSave{
+    background-color: #2e3d50;
+    margin-top: 20px;
+    width: 80px; 
+    height: 40px;
+}
+tr:hover {
+    background-color: #f5f5f5;   
+}
+.goBackBtn{
+    font-size:20px;
+    background-color:#2e3d50;
+    margin-left: 70px;
+    margin-top: 4%;
+}

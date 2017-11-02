@@ -1,0 +1,93 @@
+<div id="center" class="AllProfile">
+    <input class="Sherch" type="submit" value="click here to see all customers" (click)="GoBackAllCust()" *ngIf="seeAllCust">
+    <div id="CardOfUser" *ngIf="ShowUserProfile==false">
+        <div class="card" *ngFor="let item of allUsers">
+            <Suggest [Img]="item.Image" [Name]="item.Name" [Age]="item.Age" [City]="item.City" [InterestedInGender]="item.InterestedInGender"
+                [AboutYou]="item.AboutYou" [LastSeenTime]="item.LastSeenTime" [LastSeenDate]="item.LastSeenDate">
+            </Suggest>
+
+            <Like [likes]="item.Likes" [likedCustomer]="item"></Like>
+            <Star [InterestingCust]="item"></Star>
+            <span class="glyphicon glyphicon-eye-open eye" data-toggle="tooltip" data-placement="bottom" title="View Profile" (click)="ViewProfile(item)"></span>
+            <AddToWatchList [addedCustomer]="item"></AddToWatchList>
+        </div>
+    </div>
+    <div class="filter-div" *ngIf="ShowUserProfile==false">
+        <h3>Filtering</h3>
+        <label>Gender :</label>
+        <input type="checkbox" class="gender" [(ngModel)]="Male" name="male"> Male
+        <input type="checkbox" class="gender" [(ngModel)]="Female" name="female"> Female
+        <br/>
+        <label>Area :</label>
+        <select class="select" [(ngModel)]="Area" name="area">
+    <option *ngFor="let area of AreaArr" [value]="area">{{area}}</option>
+</select>
+        <br/>
+        <label>City :</label>
+        <input type="text" class="input" [(ngModel)]="City1" name="city">
+        <br/>
+        <label>Age :</label>
+        <select class="age leftAge" [(ngModel)]="AgeMin" name="ageMin">
+    <option  *ngFor="let age of AgeNumber"  [value]="age">
+    {{age}}</option>
+</select> -
+        <select class="age" [(ngModel)]="AgeMax" name="ageMax">
+    <option *ngFor="let age of AgeNumber"  [value]="age">
+    {{age}}</option>
+</select>
+        <br/>
+        <label>Religion :</label>
+        <select class="select1" [(ngModel)]="Religion" name="religion">
+    <option *ngFor="let religion of ReligionArr" [value]="religion">{{religion}}</option>
+</select>
+        <br/>
+        <button (click)="Search()" class="button btn btn-default">
+        Find Love<span class="glyphicon glyphicon-heart"></span></button>
+    </div>
+
+
+
+
+
+
+
+
+
+ 
+<div class="container PublicProfile" *ngIf="ShowUserProfile">
+    <p>{{UserName}}</p>
+<div class="view">
+   <img class="imgProfile" src="img/{{UserImage}}"/>
+   <br/>
+   <Like class="loveComponent"
+   [likes]="Likes"
+   [likedCustomer]="userObj"
+   ></Like>
+   <Star [InterestingCust]="userObj"></Star>
+   <AddToWatchList [addedCustomer]="userObj"></AddToWatchList>
+</div>
+<div class="viewProfile">
+    Gender : {{UserGender}}
+    <br/>
+    want to meet : {{InterestedInGender1}}
+    <br/>
+    birthday : {{UserBirthday}}
+    <br/>
+    Area : {{UserArea}}
+    <br/>
+    City : {{UserCity}}
+    <br/>
+    Hobbies : {{UserHobbies}}
+    <br/>
+    Sport : {{Sport}}
+    <br/>
+    Ganer : {{UserMusic}}
+    <br/>
+    Religion : {{UserReligion}}
+    <br/>
+    About me : {{UserAboutYou}}
+    <br/>
+     Last seen : {{LastSeenDate}}
+</div>
+  </div>
+ <button class="GoBack" *ngIf="ShowUserProfile" (click)="GoBackToMaches()">Go back to all Customers</button>

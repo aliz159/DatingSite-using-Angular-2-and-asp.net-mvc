@@ -1,0 +1,62 @@
+<div class="PersonalProfile">
+  <!--*ngIf=ShowTitle  -->
+<h1 class="title" >{{title}}</h1>
+<div id="center" *ngIf="!ShowUserProfile">
+  <div id="CardOfUser">
+    <div class="card" *ngFor="let item of HaveInterestInMe;">
+      <Suggest [Img]="item.Image" [Name]="item.Name" [Age]="item.Age" [City]="item.City" [InterestedInGender]="item.InterestedInGender"
+        [AboutYou]="item.AboutYou" [LastSeenTime]="item.LastSeenTime" [LastSeenDate]="item.LastSeenDate">
+      </Suggest>
+      <Like [likes]="item.Likes" [likedCustomer]="item"></Like>
+      <Star [InterestingCust]="item"></Star>
+<span class="glyphicon glyphicon-eye-open eye" data-toggle="tooltip" data-placement="bottom" title="View Profile" (click)="ViewProfile(item)"></span>             
+      <AddToWatchList [addedCustomer]="item"></AddToWatchList>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container PublicProfile" *ngIf="ShowUserProfile==true">
+    <p>{{UserName}}</p>
+<div class="view">
+   <img class="imgProfile" src="img/{{UserImage}}"/>
+   <br/>
+   <Like class="loveComponent"
+   [likes]="Likes"
+   [likedCustomer]="userObj"
+   ></Like>
+   <Star [InterestingCust]="userObj"></Star>
+   <AddToWatchList [addedCustomer]="userObj"></AddToWatchList>
+</div>
+
+
+
+<div class="viewProfile">
+    Gender : {{UserGender}}
+    <br/>
+    want to meet : {{InterestedInGender1}}
+    <br/>
+    birthday : {{UserBirthday}}
+    <br/>
+    Area : {{UserArea}}
+    <br/>
+    City : {{UserCity}}
+    <br/>
+    Hobbies : {{UserHobbies}}
+    <br/>
+    Sport : {{Sport}}
+    <br/>
+    Ganer : {{UserMusic}}
+    <br/>
+    Religion : {{UserReligion}}
+    <br/>
+    About me : {{UserAboutYou}}
+    <br/>
+     Last seen : {{LastSeenDate}}
+<div>
+ <button class="GoBack btn btn-primary" (click)="GoBackToMaches()">
+     Go back to  interested List</button>
+  </div> 
+
+</div>

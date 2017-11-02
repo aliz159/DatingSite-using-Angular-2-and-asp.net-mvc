@@ -1,0 +1,325 @@
+
+<body class="register">
+  <h1>Register</h1>
+<form *ngIf="nextForm" #trvForm="ngForm" (ngSubmit)="NextForm(trvForm)">
+<div class="FirstForm">
+
+<input type="file" id="btnUpload" value="Upload" (change)="fileChange($event)" class="upload" 
+ [(ngModel)]="ImgFilefromUser" required name="pic" #trvImg="ngModel" /> 
+      <div *ngIf="trvImg.errors && (trvImg.dirty || trvImg.touched)" class="alert alert-danger">
+        <div [hidden]="!trvImg.errors.required">Image is required</div>
+      </div>
+
+  <div> 
+  <img [attr.src]='file_srcs[0]' alt="Your Profile Picture" class="profilePic"/> 
+</div>
+
+  <label for="fname"><span class="glyphicon glyphicon-user"></span></label>
+  <input type="text" id="fname" name="fname" placeholder="Full Name" required [(ngModel)]="UserName" #trvName="ngModel"
+  data-toggle="tooltip" data-placement="bottom" title="User name"
+  pattern="[a-zA-Z][a-zA-Z ]+">
+  <div *ngIf="trvName.errors && (trvName.dirty || trvName.touched )" class="alert alert-danger alertError">
+    <div [hidden]="!trvName.errors.required">Name is required</div>
+    <div [hidden]="!trvName.hasError('pattern')">Only alphabetsallowed</div>
+  </div>
+  <br/>
+  <label for="email"><span class="glyphicon glyphicon-envelope"></span></label>
+  <input type="email" id="email" placeholder="Enter email" name="email" min="6" required [(ngModel)]="Email" #trvEmail="ngModel"
+  data-toggle="tooltip" data-placement="bottom" title="Email"
+  pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+  <div *ngIf="trvEmail.errors && (trvEmail.dirty || trvEmail.touched)" class="alert alert-danger alertError">
+    <div [hidden]="!trvEmail.errors.required">Email is required</div>
+    <div [hidden]="!trvEmail.hasError('pattern')">Email format should be <small><b>joe@abc.com</b></small></div>
+  </div>
+  <br/>
+
+  <label for="pwd"> <span class="glyphicon glyphicon-lock"></span></label>
+  <input type="password" id="pwd" placeholder="Enter password" name="pwd" required [(ngModel)]="Password" #trvPass="ngModel"
+  data-toggle="tooltip" data-placement="bottom" title="Password"
+  minlength="6">
+  <div *ngIf="trvPass.errors && (trvPass.dirty || trvPass.touched)" class="alert alert-danger alertError">
+    <div [hidden]="!trvPass.errors.required">Password is required</div>
+    <div [hidden]="!trvPass.errors.minlength">password must contain minimum 6 chars</div>
+  </div>
+  <br/>
+  <label for="user"><i class="fa fa-child" style="font-size:48px;"></i></label>
+  <select required class="selectpicker" name="age" [(ngModel)]="MyAge" #trvMyAge="ngModel"
+  data-toggle="tooltip" data-placement="bottom" title="Your age">
+     <option *ngFor="let age of AgeNumber" [value]="age">
+      {{age}}</option></select>
+           <div *ngIf="trvMyAge.errors && (trvMyAge.dirty || trvMyAge.touched)" class="alert alert-danger alertError">
+           <div [hidden]="!trvMyAge.hasError('required')">age is required</div>
+           </div>
+  <br/>
+  <label for="pwd"><i class="fa fa-intersex" ></i></label>
+  <input class="gender" type="radio" name="gender" value="male" [(ngModel)]="Gender" id="Male" checked required><label for="Male" class="maleFemale"
+  data-toggle="tooltip" data-placement="bottom" title="Gender interest"> Male</label>
+  <input class="gender" type="radio" name="gender" value="female" [(ngModel)]="Gender" id="Female"><label for="Female" class="maleFemale">Female</label>
+  <br>
+  <label><span class="glyphicon glyphicon-calendar"></span></label>
+  <input type="date" id="exampleInputDOB1" placeholder="Date of Birth" [(ngModel)]="DateOfBirth" #trvDate="ngModel" name="Date"required
+  data-toggle="tooltip" data-placement="bottom" title="Date of birth">
+           <div *ngIf="trvDate.errors && (trvDate.dirty || trvDate.touched)" class="alert alert-danger alertError">
+           <div [hidden]="!trvDate.hasError('required')">Date of birth is required</div>
+           </div>
+  <br/>
+  <span id="homeIcon" class="glyphicon glyphicon-home"></span>
+  <select required class="selectpicker" name="area" [(ngModel)]="Area1" #trvArea="ngModel"
+  data-toggle="tooltip" data-placement="bottom" title="Area">
+   <option *ngFor="let area of Area" [value]="area">
+    {{area}}</option></select>
+           <div *ngIf="trvArea.errors && (trvArea.dirty || trvArea.touched)" class="alert alert-danger alertError">
+           <div [hidden]="!trvArea.hasError('required')">Area is required</div>
+           </div>
+  <br/>
+  <label for="place"><span class="glyphicon glyphicon-home"></span></label>
+  <input type="string" id="city" placeholder="City" name="city" required [(ngModel)]="password" #trvCity="ngModel" [(ngModel)]="City"
+  data-toggle="tooltip" data-placement="bottom" title="City">
+  <div *ngIf="trvCity.errors && (trvCity.dirty || trvCity.touched)" class="alert alert-danger alertError">
+    <div [hidden]="!trvCity.errors.required">City is required</div>
+  </div>
+  <br/>
+  <label for="place"><span class="glyphicon glyphicon-heart"></span></label>
+  <select required class="selectpicker" placeholder="Looking For.." name="love" [(ngModel)]="LookingFor" #trvLove="ngModel"
+  data-toggle="tooltip" data-placement="bottom" title="Lokiing for">
+ <option  default>Looking for..</option>
+    <option *ngFor="let love of Love" [value]="love">    
+    {{love}}</option></select>
+            <div *ngIf="trvLove.errors && (trvLove.dirty || trvLove.touched)" class="alert alert-danger alertError">
+           <div [hidden]="!trvLove.hasError('required')">Love filed is required</div>
+           </div>
+  <br/>
+  <div class="checkbox">
+    <label><input  id="checkbox" type="checkbox" name="remember" required
+      name="pic" [(ngModel)]="pic">
+   i agree the <strong><a href="" data-toggle="modal" data-target="#myModal">conditions</a></strong> of use</label>
+  </div>
+  <button type="submit" [disabled]="!trvForm.valid" class="btn btn-default">Continued</button>
+  </div>
+</form>
+
+
+
+
+<div class="container-fluid">
+  <div class="row">
+
+<form *ngIf="!nextForm" #trvForm1="ngForm" (ngSubmit)="BuildProfile(trvForm1)"
+ class="secondForm">
+<div class="col-sm-4 col-sm-4-1">
+      <label for="user">occupation</label>
+      <select required class="selectpicker" name="work2" [(ngModel)]="Work1" #trvWork1="ngModel">
+           <option *ngFor="let work of Work" [value]="work">
+           {{work}}</option></select>
+           <div *ngIf="trvWork1.errors && (trvWork1.dirty || trvWork1.touched)" class="alert alert-danger">
+           <div [hidden]="!trvWork1.hasError('required')">Work is required</div>
+           </div>
+      <label for="user">Education</label>
+      <select required class="selectpicker" name="education1" [(ngModel)]="Education1" #trvEducation="ngModel">
+           <option *ngFor="let education of Education" [value]="education">
+           {{education}}</option></select>
+           <div *ngIf="trvEducation.errors && (trvEducation.dirty || trvEducation.touched)" class="alert alert-danger">
+           <div [hidden]="!trvEducation.hasError('required')">Education is required</div>
+           </div>
+      <label for="user">Movies</label>
+      <input required type="string" class="form-control" name="moviea" [(ngModel)]="Movie1" #trvMovie="ngModel">
+           <div *ngIf="trvMovie.errors && (trvMovie.dirty || trvMovie.touched)" class="alert alert-danger">
+           <div [hidden]="!trvMovie.hasError('required')">Movie is required</div>
+           </div>
+      <label for="phone">Phone</label>
+      <input required type="string" class="form-control" id="phone" name="Phone" [(ngModel)]="Phone" #trvPhone="ngModel"
+       pattern="[0-9]*" minlength="10" maxlength="10">
+         <div *ngIf="trvPhone.errors && (trvPhone.dirty || trvPhone.touched)" class="alert alert-danger">
+         <div [hidden]="!trvPhone.hasError('required')">Mobile is required</div>
+         <div [hidden]="!trvPhone.hasError('pattern')">Mobile numberr should be only numbers</div>  
+         <div [hidden]="!trvPhone.hasError('minlength')">Mobile should be 10digit</div>
+         </div>
+      <label for="place">Religion</label>
+      <select required class="selectpicker" name="religion" [(ngModel)]="Religion1" #trvReligion="ngModel">>
+           <option *ngFor="let religion of Religion" [value]="religion">
+           {{religion}}</option></select>
+           <div *ngIf="trvReligion.errors && (trvReligion.dirty || trvReligion.touched)" class="alert alert-danger">
+           <div [hidden]="!trvReligion.hasError('required')">Religion is required</div>
+           </div>
+      <label for="user">Hobbies</label><br/>
+      <div class="container hobbies " >
+        <input required id="Hobbies" class="HobbiesInput" type="text" name="Hobb" (mousedown)="filterHobbies()">
+        <div class="suggestions">
+          <ul class="hobbis-list" *ngIf="toggleUilistHobbies">
+            <li *ngFor="let item of Hobbies" (click)="selectHobbies(item)" [value]="item">
+              <a>{{item}}</a>
+            </li>
+          </ul>
+        </div>
+        <div class="selectedDiv">
+          <div *ngFor="let item of selectedHobbies">
+            <div class="selected">
+              <span>{{item}}</span>
+              <a (click)="removeHobbies(item)">x</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <label for="user">Music schner</label><br/>
+      <div class="container hobbies">
+      <input required id="schner" class="HobbiesInput" type="text" name="schner" (mousedown)="filteredSchner()">
+      <div class="suggestions">
+        <ul class="hobbis-list" *ngIf="toggleUilistSchner">
+          <li *ngFor="let item of Schner" (click)="selectSchner(item)" [value]="item">
+            <a>{{item}}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="selectedDiv">
+        <div *ngFor="let item of selectedSchner">
+          <div class="selected">
+            <span>{{item}}</span>
+            <a (click)="removeSchner(item)">x</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <label for="user">Number of matching hobbies</label>
+      <select required class="selectpicker" name="match" [(ngModel)]="matchHobbies" #trvmatchHobb="ngModel">
+           <option *ngFor="let machingHobbies of MachingHobbies" [value]="machingHobbies">
+           {{machingHobbies}}</option></select>
+</div>
+<div class="col-sm-4 col-sm-4-2">
+      <label for="user" >person's occupation</label><br/>
+      <select required class="selectpicker" name="work1" [(ngModel)]="Work2" #trvWork2="ngModel">
+           <option *ngFor="let work of Work" [value]="work">
+           {{work}}</option></select>
+           <div *ngIf="trvWork2.errors && (trvWork2.dirty || trvWork2.touched)" class="alert alert-danger">
+           <div [hidden]="!trvWork2.hasError('required')">Person occupation is required</div>
+           </div>
+      <label for="user">Looking for someone with an education</label><br/>
+      <select required class="selectpicker" name="education2" [(ngModel)]="Education2" #trvEducation2="ngModel">
+           <option *ngFor="let education of Education" [value]="education">
+           {{education}}</option></select>
+           <div *ngIf="trvEducation2.errors && (trvEducation2.dirty || trvEducation2.touched)" class="alert alert-danger">
+           <div [hidden]="!trvEducation2.hasError('required')">Person education is required</div>
+           </div>
+      <label for="pwd" class="labelSmoking">Smooking</label><br/>
+      <input class="gender" type="radio" name="smoking" value="Yes" [(ngModel)]="Smoking" #trvSmoking="ngModel" checked required> Yes
+      <input class="gender" type="radio" name="smoking" value="No" [(ngModel)]="Smoking"> No<br/>
+           <div *ngIf="trvSmoking.errors && (trvSmoking.dirty || trvSmoking.touched)" class="alert alert-danger">
+           <div [hidden]="!trvSmoking.hasError('required')">Smoking filed is required</div>
+           </div>     
+      <label for="user" class="labelAges">Interested in ages</label><br/>
+      <select class="selectpicker ageSelect" name="age" [(ngModel)]="MinAge" #trvAge1="ngModel">
+           <option *ngFor="let item of AgeNumber" [value]="item">    
+           {{item}}</option></select> -
+      <select class="selectpicker ageSelect" name="age" [(ngModel)]="MaxAge" #trvAge2="ngModel">
+            <option *ngFor="let item of AgeNumber" [value]="item">    
+           {{item}}</option></select>
+            <!-- <div *ngIf="trvAge1.errors && (trvAge1.dirty || trvAge1.touched)" class="alert alert-danger">
+           <div [hidden]="!trvAge1.hasError('required')">Minimum age is required</div>
+           </div>  
+            <div *ngIf="trvAge2.errors && (trvAge2.dirty || trvAge2.touched)" class="alert alert-danger">
+           <div [hidden]="!trvAge2.hasError('required')">Maximum age is required</div>
+           </div>   -->
+      <label for="place">Politic view</label>
+      <select required class="selectpicker" name="politic" [(ngModel)]="PoliticView" #trvPoliticView="ngModel">>
+           <option *ngFor="let politic of Politic" [value]="politic">
+           {{politic}}</option></select>
+           <div *ngIf="trvPoliticView.errors && (trvPoliticView.dirty || trvPoliticView.touched)" class="alert alert-danger">
+           <div [hidden]="!trvPoliticView.hasError('required')">Politic view is required</div>
+           </div>  
+      <br/>
+      <label for="user">Sport</label>
+      <div class="container hobbies">
+        <input required id="Sport" class="HobbiesInput" type="text" name="sport" (mousedown)="filteredSport()">
+        <div class="suggestions">
+          <ul class="hobbis-list" *ngIf="toggleUilistSport">
+            <li *ngFor="let item of Sport" (click)="selectSport(item)">
+              <a>{{item}}</a>
+            </li>
+          </ul>
+        </div>
+        <div class="selectedDiv">
+          <div *ngFor="let item of selectedSport">
+            <div class="selected">
+              <span>{{item}}</span>
+              <a (click)="removeSport(item)">x</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <label for="place">Write some details about yourself</label>
+      <input required type="string" class="form-control" id="yourself" name="yourself" [(ngModel)]="aboutMySelf" #trvaboutMySelf="ngModel">
+           <div *ngIf="trvaboutMySelf.errors && (trvaboutMySelf.dirty || trvaboutMySelf.touched)" class="alert alert-danger">
+           <div [hidden]="!trvaboutMySelf.hasError('required')">This filed is required</div>
+           </div>  
+      <label for="place">Favorite quotes</label>
+      <input required type="text" class="form-control" name="quotes" [(ngModel)]="Quotes" #trvQuotes="ngModel">
+           <div *ngIf="trvQuotes.errors && (trvQuotes.dirty || trvQuotes.touched)" class="alert alert-danger">
+           <div [hidden]="!trvQuotes.hasError('required')">Quotes is required</div>
+           </div>  
+     <button type="submit" [disabled]="!trvForm1.valid" class="btn btn-default 
+     SaveProfileButton">Save</button>  
+</div>
+</form>
+
+     <button *ngIf="!nextForm" (click)="GoBack()" class="btn btn-default">
+     <span class="glyphicon glyphicon-chevron-left" style="font-size:15px;"></span>
+       Go Back</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Terms of use on The-one :</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+1. One site allows the use of the site allowed adult surfers, over the age of 25 only.
+<br/>
+2. Registration to a website for married surfers is prohibited. Phishing is a criminal offense. Any violation of this condition may result in a police complaint against that surfer.
+<br/>
+3. Do not open more than one personal profile to the user - If you find an incorrect data on your profile that you can not correct, write to us and we will be happy to fix it for you.
+<br/>
+4. It is forbidden to open a personal profile for another person without his explicit consent.
+<br/>
+5. The images uploaded to your personal profile should be yours only, and at the appropriate quality for the site
+<br/>
+6. Your personal profile on the Site is personal and for your own use and should not be allowed by anyone else.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--  -->

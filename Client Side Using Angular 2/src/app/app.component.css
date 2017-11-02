@@ -1,0 +1,131 @@
+.logo{
+    width: 184px;
+    height: 60px;
+    margin-top: -5px;
+    margin-bottom: -35px;
+    margin-right: 32px;
+    margin-left: -15px;
+}
+
+h1{   
+    margin-left: 312px;
+    font-size: 167px;
+    color: white;
+    font-family: 'Parisienne', cursive;
+    margin-bottom: 66px;
+    margin-top: 10%;
+    text-shadow: 8px 8px black;
+
+}
+h3{
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px;
+}
+
+#Register{
+margin-top: 21px;
+    margin-left: 286px;
+    font-size: 60px;
+   color: white;
+    /* font-family: serif; */
+    text-shadow: 2px 2px black;
+    
+}
+#Register:hover{
+  cursor:pointer;
+  color: whitesmoke;
+      text-shadow: 5px 5px black;
+
+}
+#Login:hover{
+  cursor:pointer;
+    color: whitesmoke;
+      text-shadow: 5px 5px black;
+}
+#Login{
+margin-top: 21px;
+font-size: 60px;
+   margin-left: -3px;
+color: white;
+    /* font-family: serif; */
+    text-shadow: 2px 2px black;
+} 
+
+
+
+
+
+#Register, #Login{
+/*font-family: 'Yantramanav', sans-serif;*/
+font-family: 'Courgette', cursive;
+
+}
+.transbox {
+    text-align: center;
+    margin: 30px;
+    margin-top: 63px;
+    opacity: 0.8;
+    padding: 15px;
+    font-family: 'Courgette', cursive;
+    color: white;
+    text-shadow: 1px 1px 50px red;
+    width: 651px;
+    margin-left: 256px;
+    font-weight: bold;
+}
+/*
+font-family: 'News Cycle', sans-serif;
+
+font-family: 'Courgette', cursive;
+font-family: 'Russo One', sans-serif;
+font-family: 'Shrikhand', cursive;
+font-family: 'Vidaloka', serif;
+font-family: 'Zilla Slab Highlight', cursive;
+font-family: 'Wendy One', sans-serif;
+font-family: 'Gentium Book Basic', serif;
+*/
+    .home li{
+        float: left;
+        margin-left: 15px;
+        list-style: none;
+    }
+
+.home li a {
+    color: white;
+    padding: 8px 16px;
+    border-radius: 7px;
+}
+
+img{
+    width: 138px;
+}
+a{
+    margin-right: 10px;
+    font-size: 19px; 
+}
+
+.navbar-nav>li>a {
+    line-height: 35px;
+   font-size: 24px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Courgette', cursive;
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+.navbar-nav>li>a:hover {
+    color: red;
+    font-size: 24px;  
+    font-weight: bold;
+}
+.dropdown-menu>li>a{
+    width: 200px;
+    margin-right:2px; 
+}
+.dropdown-menu>li>a:hover {
+    background-color: #cc0600;
+    font-size: 19px;  
+    font-weight: bold;
+}
+

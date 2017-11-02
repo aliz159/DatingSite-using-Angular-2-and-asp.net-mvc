@@ -1,0 +1,195 @@
+.title{
+        text-align: center;
+    margin-top: 4%;
+    padding-top: 22%;
+    padding-bottom: 3%;
+    font-weight: bold;
+    font-family: 'Cookie';
+    color: white;
+    font-size: 60px;
+    text-shadow: 3px 5px 5px black;
+}
+.card{
+    /*box-shadow: 5px 5px 8px #888888;
+    border: 1px solid white;
+   
+
+      */
+    box-shadow: 5px 5px 8px #fff;
+    border: 1px solid red;
+    background-color: rgba(230, 230, 250, 0.68);
+    margin-bottom: 40px;
+    width: 46%;
+    height: 373px;
+    font-family: myFirstFont;
+    color: black;
+    padding: 10px;
+    float: left;
+    margin-top: 18px;
+    margin-left: 15px;
+    margin-right: 13px;
+    font-size: 20px;
+}
+
+#CardOfUser{
+    margin-left: 10px;
+}
+
+.imgCard{
+    height:200px;
+    width:175px;
+    float:left;
+    margin-right: 10px;
+}
+span{
+    font-weight: bold;
+}
+
+input{
+        margin-right: 15px;
+}
+button{
+    float:right;
+}
+
+.filter-div{
+
+    margin-left: 7px;
+    margin-top: -483px;
+    border: 1px solid blue;
+    display: inline-block;
+     width: 200px;
+   /* padding-bottom: 15px;
+    padding-left: 15px;*/
+    border-radius: 10px;
+    background-color: rgba(230, 230, 250, 0.68);
+}
+
+
+
+.gender{
+    margin-left: 15px;
+    border-radius: 10px;
+}
+.select{
+    margin-left: 26px;
+    width: 145px;
+    height: 29px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.filter-div{
+    margin: 15px;
+    border: 1px solid blue;
+    /*padding: 10px;*/
+    width: 250px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
+    background-color: rgba(7, 7, 239, 0.08);
+}
+.hart{
+        font-size: 31px;
+        color: rgb(241, 5, 50);
+}
+.eye{
+    font-size: 24px;
+    margin-left: 25px;
+}
+label{
+    color: palevioletred;
+}
+h3{
+    margin-left: 50px;
+    color: palevioletred;
+
+}
+.select1{
+    margin-left: 1px;
+    width: 145px;
+    height: 29px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.input{
+    margin-left: 31px;
+    width: 145px;
+    height: 29px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(169,169,169)
+}
+button{
+    float:right;
+    border-radius: 10px;
+}
+.age{
+    width: 67px;
+    height: 29px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.leftAge{
+    margin-left: 30px;
+}
+.btn-default{
+    margin-left: 80px;
+    border-radius: 2px;
+        color: palevioletred;
+    font-weight: bold;
+}
+.col-sm-4{
+    font-size: 28px;
+    width: 668px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px grey;
+
+    background-color: rgba(230, 230, 250, 0.68);
+    margin-left: 455px;
+    display: inline-block;
+    margin-top: -156px
+}
+.aboutMe{
+    overflow: auto;
+    height: 75px;
+    font-weight: bold;
+}
+.GoBack{
+     margin-top: 70px;
+    margin-right: 444px;
+    width: 200px;
+    height: 38px;
+    color: red;
+    border: 1px;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.viewProfile{
+    margin-left: 37%;
+    margin-top: -24%;
+    font-size: 27px;
+}
+.view{
+       /* margin-left: 100px;*/
+     display: -webkit-inline-box;
+}
+    .PublicProfile{
+width: 100%;
+    margin-top: -15%;
+    box-shadow: 5px 5px 8px #888888;
+    border: 1px solid white;
+    background-color: rgba(230, 230, 250, 0.68);
+    }
+p{
+    text-align: center;
+    font-size: 40px;
+}
+.imgProfile{
+    width: 56%;
+    height: 260px;
+    margin-left: 15%;
+}
+.carousel-inner{
+    margin-top: 475px;
+}

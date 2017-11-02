@@ -1,0 +1,93 @@
+span{
+font-size: 20px;
+color: white;
+}
+.glyphicon{
+    margin-left: 15px;
+    color: red;
+    font-size: 50px;
+}
+.readMore{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 23px;
+}
+.cards{
+    border: 1px solid red;
+    background-color: rgba(46, 36, 28, 0.55);
+    margin-bottom: 5%;
+    width: 48%;
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+    color: black;
+    margin-left: 26%;
+    box-shadow: 1px 1px 10px red;
+    display: inline-block;
+    padding: 10px;
+}
+img{
+    float: right;
+    margin: 0 0 10px 10px;
+     border-radius: 8px;
+}
+    h1{
+          text-align: center;
+    margin-top: 70px;
+    color: rgb(255,255,255);
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Cookie';
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000, 3px 3px 5px red;
+    }
+
+.modal{
+  /*width: 100%*/
+    margin-top: 10%;
+    height: 50%;
+    text-align: center;
+    background-color: white;
+    
+}
+.close {/*x*/
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+   /* transition: 0.3s;*/
+}
+.popphoto{
+    background-color: black;
+    float: right;
+}
+
+
+
+
+
+
+
+
+        /* .container {
+         font-size: 16px;
+         line-height: 16px;
+         height: 32px;
+         overflow: hidden;
+    } */
+    .show {
+         overflow: visible;
+         height: auto;
+    }
+        .ngTruncateToggleText {
+    color: red;
+    font-size: 90%;
+    font-style: italic;
+}
+.modal {
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px #888888;
+}
