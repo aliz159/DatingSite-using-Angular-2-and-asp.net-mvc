@@ -1,0 +1,252 @@
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\ApplicationInsights.config
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\csc.exe
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\csc.exe.config
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\csc.rsp
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\csi.exe
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\csi.rsp
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\System.AppContext.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\vbc.exe
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\vbc.exe.config
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\vbc.rsp
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\VBCSCompiler.exe
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Project_Tamat.dll.config
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Project_Tamat.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Project_Tamat.pdb
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Antlr3.Runtime.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\EntityFramework.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\EntityFramework.SqlServer.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.AI.Web.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.ApplicationInsights.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Newtonsoft.Json.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Owin.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Net.Http.Formatting.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.Cors.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.Helpers.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.Http.Cors.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.Http.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.Http.WebHost.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.Mvc.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.Optimization.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.Razor.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.WebPages.Deployment.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.WebPages.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.WebPages.Razor.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\WebGrease.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Net.Http.Formatting.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.Http.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.Http.Cors.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.Http.WebHost.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.Helpers.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.Mvc.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.Optimization.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.Razor.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.WebPages.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.WebPages.Deployment.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\System.Web.WebPages.Razor.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Antlr3.Runtime.pdb
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Newtonsoft.Json.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\EntityFramework.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\EntityFramework.SqlServer.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.ApplicationInsights.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\bin\Microsoft.AI.Web.xml
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.csprojResolveAssemblyReference.cache
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.Initial.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AgeToCustomer.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.Initial1.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.DeleteColFromSessions.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AddColFromSessions.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AddDateAndTime.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AddingFileToCustomerTable.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.ChangeFiledAgeInCustomerTable.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AddingFileToStoryTable.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AddingPropertyToClasses.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AddImgToStoryClass.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.addSessionTable.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.addSessionTable2.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.addSessionTable3.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.addClassWatchList.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.addTableWatchListToDB.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.addingFeildsToContactTable.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AddDBTabelNamedLikes.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AddDBTabelNamedLikes1.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.addPropertyToCustomerDB.resources
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.csproj.GenerateResource.Cache
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.dll
+C:\Users\יפה בלטה\Desktop\2_10_Aliza\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.pdb
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\ApplicationInsights.config
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\csc.exe
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\csc.exe.config
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\csc.rsp
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\csi.exe
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\csi.rsp
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\System.AppContext.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\vbc.exe
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\vbc.exe.config
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\vbc.rsp
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\VBCSCompiler.exe
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Project_Tamat.dll.config
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Project_Tamat.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Project_Tamat.pdb
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Antlr3.Runtime.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\EntityFramework.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.AI.Web.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.ApplicationInsights.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Newtonsoft.Json.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Owin.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Net.Http.Formatting.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.Cors.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.Helpers.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.Http.Cors.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.Http.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.Http.WebHost.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.Mvc.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.Optimization.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.Razor.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.WebPages.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\WebGrease.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Net.Http.Formatting.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.Http.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.Http.Cors.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.Http.WebHost.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.Helpers.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.Mvc.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.Optimization.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.Razor.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.WebPages.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Antlr3.Runtime.pdb
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Newtonsoft.Json.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\EntityFramework.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.ApplicationInsights.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\bin\Microsoft.AI.Web.xml
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.Initial.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AgeToCustomer.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.Initial1.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.DeleteColFromSessions.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AddColFromSessions.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AddDateAndTime.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AddingFileToCustomerTable.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.ChangeFiledAgeInCustomerTable.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AddingFileToStoryTable.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AddingPropertyToClasses.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AddImgToStoryClass.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.addSessionTable.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.addSessionTable2.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.addSessionTable3.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.addClassWatchList.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.addTableWatchListToDB.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.addingFeildsToContactTable.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AddDBTabelNamedLikes.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.AddDBTabelNamedLikes1.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.Migrations.addPropertyToCustomerDB.resources
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.dll
+C:\Users\user\Desktop\aliza_yaffa\Project_Tamat\Project_Tamat\obj\Debug\Project_Tamat.pdb
